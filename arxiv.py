@@ -138,6 +138,7 @@ def save_and_translate(papers, filename='arxiv.json'):
     
     untranslated_papers = []
     translated_papers = []
+    print("Start Processing: ", len(papers))
     for paper in papers:
         title = paper['title'].lower()
         print(f"Prossing {title}")
