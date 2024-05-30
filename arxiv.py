@@ -140,6 +140,7 @@ def save_and_translate(papers, filename='arxiv.json'):
     translated_papers = []
     for paper in papers:
         title = paper['title'].lower()
+        print(f"Prossing {title}")
         if title in cached_title2idx.keys():
             translated_papers.append(
                 results[cached_title2idx[title]]
